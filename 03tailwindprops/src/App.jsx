@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <h1 classNameName="bg-green-400">Tailwind Test</h1>
-      <Card/>
-      <Card/>
+      <Card name="Faiz" btn="Click Here"/>
+      <Card name="Farhan" btn="Start Now"/>
     </>
   );
 }

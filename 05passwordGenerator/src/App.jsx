@@ -29,9 +29,12 @@ function App() {
 
   const copyToClipboard =useCallback(()=>{
     passwordRef.current?.select();
+    // console.log("Printing");
+    // console.log(passwordRef);
+    // console.log(passwordRef.current);
     window.navigator.clipboard.writeText(password);
   }, [password])
-
+  
   useEffect(()=>{passwordGenerator();
   }, [length,numberAllowed,charAllowed, passwordGenerator]);
 
